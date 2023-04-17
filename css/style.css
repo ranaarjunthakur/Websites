@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Telugu', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+/* toggle  side nav */
+
+	/* The side navigation menu */
+    .sidenav {
+        height: 100%; 
+        width: 0;
+        position: fixed; 
+        z-index: 9999;
+        top: 0;
+        background-color: rgb(0, 0, 0); 
+        overflow-x: hidden;
+        padding-top: 60px; 
+        transition: 0.5s; 
+    }
+
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        transition: 0.3s
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover, .offcanvas a:focus{
+        color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+        transition: margin-left .5s;
+        padding: 20px;
+    }
+    .sidenav {
+        right: 0;
+    }
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+        .sidenav {
+                padding-top: 15px;  
+                display: none; 
+             }
+        .sidenav a {
+            font-size: 18px;
+        }
+        
+    }
+    .sidenav {
+        right: 0;
+    }
+
+    @media screen and (max-width: 450px) {
+        .sidenav {
+               
+                display: none; 
+             }
+
+             .sidenav +span{
+                display: none;
+             }
+            }
+
+
+
+ 
+  /* owl carousel */
+  
+  .owl-nav button {
+    position: absolute;
+    top: 50%;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .owl-nav button.owl-prev {
+    left: 0;
+  }
+  .owl-nav button.owl-next {
+    right: 0;
+  }
+  
+  .owl-dots {
+    text-align: center;
+    padding-top: 15px;
+  }
+  .owl-dots button.owl-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #ccc;
+    margin: 0 3px;
+  }
+  .owl-dots button.owl-dot.active {
+    background-color: #000;
+  }
+  .owl-dots button.owl-dot:focus {
+    outline: none;
+  }
+  .owl-nav button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.38) !important;
+  }
+  /* span {
+      font-size: 70px;    
+      position: relative;
+      top: -5px;
+  } */
+  .owl-nav button:focus {
+      outline: none;
+  }
+  
+  
+
+
+
+/* footer */
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+  }
+  
+  .footer p {
+    color: #8a8a8a;
+  }
+  
+  .footer h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align:start;
+}
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .app-logo {
+    margin-top: 20px;
+  }
+  .app-logo img {
+    width: 140px;
+  }
+  
+  .footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  
+  .menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+  }
+  
